@@ -7,7 +7,7 @@
             			<span class="icon-bar"></span>
             			<span class="icon-bar"></span>
           			</button>
-          			<a class="navbar-brand" href="Index.jsp">Pokédex</a>
+          			<a class="navbar-brand" href="ListaPokemon.jsp">Pokédex</a>
         		</div>
         		<div id="navbar" class="navbar-collapse collapse">
           			<ul class="nav navbar-nav">
@@ -18,4 +18,5 @@
           			</ul>
         		</div><!--/.nav-collapse -->
       		</div>
+      		<audio src="musica/16-the-legend-comes-to-life.mp3" autoplay></audio>
     	</nav>

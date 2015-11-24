@@ -29,48 +29,12 @@
 								if(p.getTipo2()!=null)out.println("<img src=\"imagenes/" + p.getTipo2()+".gif\"/>");
 								out.println("</td>");
 								//out.println("<td><p>"+p.getDescripcion()+"</p>");//desc
-								out.println("<td>");
-								out.println("<div class=\"container\">");
-								out.println("<div class=\"panel-group\" id=\"accordion\">");
-								out.println("<div class=\"panel panel-default\"> "+
-								"<div class=\"panel-heading\">"+
-						        "<h4 class=\"panel-title\">"+
-						        "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse"+p.getNombre()+"\">"+
-						        "Descripción"+
-						        "</a>"+
-						        "</h4>"+
-						      "</div>"+
-						      "<div id=\"collapse"+p.getNombre()+"\" class=\"panel-collapse collapse\">"+
-						      "<div class=\"panel-body\">"+p.getDescripcion()+
-						      "</div>"+
-						      "</div>"+
-						    "</div>");
-								out.println("</div>");//panel group
-								out.println("</div>");//container
-								out.println("</td>");
+								out.println("<td><details><summary>"+p.getNombre()+"</summary><p>");
+								out.println(p.getDescripcion()+"</p></summary></details></td>");
 								out.println("</tr>");
 							}
 						%>
-						<tr>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@TwBootstrap</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td colspan="2">Larry the Bird</td>
-							<td>@twitter</td>
-						</tr>
+						
 					</tbody>
 				</table>
 			</div>
